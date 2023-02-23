@@ -51,7 +51,9 @@ After build the miner.exe I will upload the miner.exe to local web server in kal
 
 After this step I will create a powershell script that will download and execute a miner.exe and create a folder “dump” in the victim PC then download and execute hackbrowser.exe and then will save the data in json format to C drive dump folder
 
-<br><br>This powershell scripts  save to payload.ps1 and upload to the webserver 
+<br><br>
+https://github.com/H4cksploit/digispark-usb-ducky-project/blob/main/steel%20browsers%20passwords%20payload.ps1
+This powershell scripts  save to payload.ps1 and upload to the webserver 
 I have to upload to the /var/www/html directory on the web server in Kali Linux and start the web server
 <h1>Final step.</h1>
 <h1>Install the Arduino IDE.</h1>
